@@ -1,4 +1,3 @@
-// db.js
 const mongoose = require('mongoose');
 
 const MONGODB_URI = process.env.MONGODB_URI;
@@ -15,3 +14,5 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
   console.log('Connected to MongoDB Atlas database.');
 });
+
+module.exports = db;
