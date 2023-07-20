@@ -1,11 +1,11 @@
-require('dotenv').config();
-import logo from './logo.svg';
+import logo from './lib/logo.svg';
 import './App.css';
 
 import React, {
   useEffect,
   useState
 } from 'react'
+
 
 function App() {
   const [welcomeMessage, setWelcomeMessage] = useState('')
@@ -31,15 +31,15 @@ function App() {
     Edit < code > src / App.js < /code> and save to reload. <
     p > {
       welcomeMessage
-    } < /p> <
-    /p> <
+    } < /p> < /
+    p > <
     a className = "App-link"
     href = "https://reactjs.org"
     target = "_blank"
     rel = "noopener noreferrer" >
     Learn React <
-    /a> <
-    /header> <
+    /a> < /
+    header > <
     /div>
   );
 }
